@@ -1,0 +1,121 @@
+
+
+body{
+    font-family: 'Monospace', sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #17141d;
+    color: white;
+    background-image:url('https://source.unsplash.com/1600x900/?weather');
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    display:flex;
+    font-size: 100%;
+
+}
+
+
+.card{
+    display: flex;
+    position: relative;
+    max-width:420px;
+    height: 350px;
+    width: 4px;
+    min-width: 250px;
+    padding: 1.5rem;
+    border-radius: 30px;
+    box-shadow: 3px 3px 50px rgba(0, 0, 0, 0.7), -3px -3px 50px rgba(0, 0, 0, 0.7);
+    transition: .2s;
+    background: rgba(203, 238, 238, 0.411);
+    margin: 1em;
+    align-items:center;
+    color: black;
+}
+
+
+.card:hover{
+    transform: translateY(-1rem);
+
+
+
+}
+
+
+input.search-bar{
+  border: none;
+  outline: none;
+  padding: 0.8em 1em;
+  border-radius: 24px;
+  background: #7c7c7c2b;
+  color: rgb(0, 0, 0);
+  font-family: sans-serif;
+  font-size: 120%;
+  width:100%;
+  
+}
+button{
+  margin: 0.5em;
+  border-radius: 50%;
+  border: none;
+  height: 50px;
+  width: 50px;
+  outline: none;
+  background:#7c7c7c2b;
+  color: white;
+  cursor:pointer;
+  transition: .3s ease-in-out;
+}
+button:hover{
+  background:white;
+}
+
+
+
+.card-header h2:hover{
+    background: linear-gradient(90deg, #91ff00, #e52e2e);
+    text-shadow: none;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    pointer-events: inherit;
+}
+.search{
+  display: flex;
+  align-items:center;
+  justify-content: space-around;
+}
+.description{
+  text-transform:capitalize;
+  margin-top: 0;
+  display:flex;
+  font-weight: bold;
+}
+.icon{
+  display:flex;
+  align-items:center;
+  margin:0 0 0 0;
+}
+.temp{
+  margin: 0;
+  margin-bottom: 0;
+  
+}
+.wind{
+  font-weight: bold;
+}
+.humidity{
+  font-weight: bold;
+}
+.weather.loading{
+  visibility: hidden;
+  position:relative;
+  max-height: 20px;
+}
+.weather.loading:after{
+  visibility: visible;
+  content:"Updating...";
+  color: rgb(19, 192, 204);
+  position: absolute;
+  top:0;
+}
